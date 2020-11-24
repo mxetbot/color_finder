@@ -16,7 +16,9 @@ camera_input = 0        # Define camera input. Default=0. 0=/dev/video0
 size_w  = 240   # Resized image width. This is the image width in pixels.
 size_h = 160	# Resized image height. This is the image height in pixels.
 
-if (inp.getInput()==1):   #Orange
+i=inp.getInput()
+
+if (i==1):   #Orange
     printf("Looking for a wrench")
     v1_min = 15
     v2_min = 125
@@ -25,7 +27,7 @@ if (inp.getInput()==1):   #Orange
     v1_max = 45
     v2_max = 220
     v3_max = 255
-elif (inp.getInput()==2):   #Pink
+elif (i==2):   #Pink
     printf("Looking for a hammer")
     v1_min = 15
     v2_min = 125
@@ -34,7 +36,7 @@ elif (inp.getInput()==2):   #Pink
     v1_max = 45
     v2_max = 220
     v3_max = 255
-elif (inp.getInput()==3):   #Green
+elif (i==3):   #Green
     printf("Looking for a phillups screwdriver")
     v1_min = 15
     v2_min = 125
@@ -43,7 +45,7 @@ elif (inp.getInput()==3):   #Green
     v1_max = 45
     v2_max = 220
     v3_max = 255
-elif (inp.getInput()==4):   #Blue
+elif (i==4):   #Blue
     printf("Looking for a flathead screwdriver")
     v1_min = 15
     v2_min = 125
